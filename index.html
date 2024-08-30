@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chistaccà è una PyWebApp</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            font-size: 70px;
+            padding: 20px 40px;
+            cursor: pointer;
+            /* cambiato come il bottone appare (rispetto a questa.html): */
+            color: white;
+            background-color: #02A4BD;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- Load PyScript -->
+    <!-- do I need the css as in docs.pyscript.net? maybe not...-->
+    <script type="module" src="https://pyscript.net/releases/2024.8.2/core.js"></script>
+</head>
+<body>
+    <button id="bottone" py-click="cambia">questa</button> <!-- note the py-click attribute -->
+    <script type="py" src="./main.py"></script> <!-- pyscript -->
+</body>
+</html>
